@@ -1,8 +1,8 @@
 ﻿using BuildingBlocks.CQRS;
-using CatalogApi.Models;
+using CatalogApis.Models;
 using MediatR;
 
-namespace CatalogApi.Products.CreateProduct
+namespace CatalogApis.Products.CreateProduct
 {
     public record CreateProductCommand(string Name , List<string> Category, string Description, string ImageFile, decimal Price  ):ICommand<CreateProductResult>;
     public record CreateProductResult(Guid Id);

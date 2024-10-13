@@ -2,7 +2,7 @@
 using Carter;
 using Mapster;
 using MediatR;
-namespace CatalogApi.Products.CreateProduct
+namespace CatalogApis.Products.CreateProduct
 {
     public record CreateProductRequest(string Name, List<string> Category, string Description, string ImageFile, decimal Price) : ICommand<CreateProductResult>;
     public record CreateProductResponse(Guid Id);
